@@ -1,0 +1,99 @@
+.container {
+
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    color: #333333;
+    padding-bottom: 10px;
+    font-size: 30px;
+    margin-top: 3px;
+    
+  }
+  .section{
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: Roboto, sans-serif;
+  }
+  .inventory-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 18px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .info-link {
+    padding: 50px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .plant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .plant-card {
+    width: 300px;
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plant-name {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .plant-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .no-plants {
+    font-size: 18px;
+    color: #6c757d;
+  }
+  .picture{
+    background-image: url("/Users/karynachernyak/vschool/development/LEVEL-5/LEVEL5CAPSTONE/client/src/images/frances-gunn-QcBAZ7VREHQ-unsplash (1).jpg"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .filter-title {
+    font-size: 24px;
+    margin-top: 2rem;
+    color: #007bff;
+  }
+  
+  .filter-form {
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  .footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    color: #fff;
+  }
