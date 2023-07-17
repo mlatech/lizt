@@ -16,7 +16,7 @@
   }
   
   .hero {
-    background-image: url("/Users/karynachernyak/vschool/development/LEVEL-5/LEVEL5CAPSTONE/client/src/images/homepagepic.jpg"); 
+    background-image: url("/Users/karynachernyak/lizt/src/images/homepagepic.jpg"); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -52,7 +52,7 @@
   }
   
   .announcements {
-    background-image: url("/Users/karynachernyak/vschool/development/LEVEL-5/LEVEL5CAPSTONE/client/src/images/jonathan-kemper-4z3lnwEvZQw-unsplash.jpg");
+    background-image: url("/Users/karynachernyak/lizt/src/images/jonathan-kemper-4z3lnwEvZQw-unsplash.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
