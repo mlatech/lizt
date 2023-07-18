@@ -63,7 +63,7 @@
     color: #6c757d;
   }
   .picture{
-    background-image: url("/Users/karynachernyak/lizt/src/components/images/frances-gunn-QcBAZ7VREHQ-unsplash (1).jpg"); 
+    background-image: url("./images/frances-gunn-QcBAZ7VREHQ-unsplash (1).jpg"); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
