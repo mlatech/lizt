@@ -8,7 +8,7 @@ export default function Navbar(props) {
   return (
     <div className="navbar">
     <div className="logo">
-    <img src={logoImage.default} alt="Logo" className="logo-image" />
+    <img src={logoImage} alt="Logo" className="logo-image" />
       <h3 className='h3'>Tom Peppers General Store</h3>
     </div>
     <div className="nav-links">
