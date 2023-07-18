@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link} from 'react-router-dom';
-import logoImage from "/Users/karynachernyak/lizt/src/components/logo.jpg"; // Replace with the path to your logo image
+import { Link, useLocation } from 'react-router-dom';
+import logoImage from "/Users/karynachernyak/lizt/src/images/IMG_8098.jpg"; // Replace with the path to your logo image
 import "./navbar.css"
 
 export default function Navbar(props) {
