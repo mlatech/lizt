@@ -1,4 +1,4 @@
-import React, { useRef }from "react";
+import React, { useRef, useEffect }from "react";
 import "./Info.css"; // Import the CSS file for styling
 import emailjs from '@emailjs/browser';
 import Navbar from "./NavBar";
@@ -20,16 +20,45 @@ export default function Info() {
       });
   };
 
+
+  useEffect(() => {
+    window.initMap = () => {
+      const mapContainer = document.getElementById("map");
+
+      const mapOptions = {
+        center: { lat: 42.170433, lng: -89.620507 }, // Replace with the coordinates of your address
+        zoom: 15, // Adjust the zoom level as per your preference
+      };
+
+      const map = new window.google.maps.Map(mapContainer, mapOptions);
+
+      const marker = new window.google.maps.Marker({
+        position: { lat: 42.170433, lng: -89.620507 }, // Replace with the coordinates of your address
+        map,
+        title: "Tom Peppers General Store",
+      });
+    };
+
+    const loadMapScript = () => {
+      const script = document.createElement("script");
+      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyCA3FlKAT1eVvVQrgdgG_740tuAcCO6wpA&libraries=places&callback=initMap`;
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+    };
+
+    if (!window.google || !window.google.maps) {
+      loadMapScript();
+    } else {
+      window.initMap();
+    }
+  }, []);
   return (
     <div className="contact-container">
       <Navbar />
-      <section className='nav-img'>
-
-      </section>  
+      <section className='nav-img'></section>  
       <section className="contact-us-section">
       <h1 className="contact-us-title">Contact Us</h1>
-      
-
       <form ref={form} onSubmit={sendEmail}>
       <label>Name</label>
       <input type="text" name="user_name" />
@@ -40,8 +69,12 @@ export default function Info() {
       <input type="submit" value="Send" />
     </form>
     <div className="line"></div>
+    <h1 className="comevisit-title">Come Visit Us During Seasonal Business Hours</h1>
+    <div id="map" style={{ height: "400px" }}></div>
+    <div className="line"></div>
 <div className="reviews">
   <h1 className="contact-us-title">Reviews</h1>
+  
   <div className="review">
   <p>Awesome plants, reasonably priced. If you are wanting heirloom verieties this is the place to come! -Tracy Kostallari</p>
   </div>
@@ -68,6 +101,6 @@ export default function Info() {
       <footer className="footer">
       <p className="footer-text">&copy; 2023 MLA Technologies. All rights reserved.</p>
       </footer>
-    </div>
+</div>
   );
 }

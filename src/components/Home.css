@@ -1,6 +1,8 @@
 .home-container {
-    font-family: Arial, sans-serif;
-  }
+  font-family: Arial, sans-serif;
+  position: relative;
+  padding-bottom: 60px; 
+}
   
   
   
@@ -56,7 +58,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
     padding: 20px;
     text-align: center;
     font-family: Roboto, sans-serif;
@@ -105,13 +106,16 @@
   }
   
   
-  .footer {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-    color: #fff;
+ 
+.footer {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+
+  /* Position the footer at the bottom of the home-container */
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  }
-  
+}

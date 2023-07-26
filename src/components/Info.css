@@ -1,5 +1,7 @@
 .contact-container {
     font-family: Arial, sans-serif;
+    position: relative;
+  padding-bottom: 60px; 
   }
   
   .nav-img {
@@ -25,6 +27,12 @@
     padding-bottom: 10px;
     font-size: 30px;
     margin-top: 3px;
+  }
+  .comevisit-title{
+    color: #333333;
+    padding-bottom: 10px;
+    font-size: 30px;
+    margin-top: 20px;
   }
   
   .contact-form {
@@ -64,24 +72,17 @@
     background-color: #45a049;
   }
   
-  .footer {
+.footer {
     margin-top: 40px;
     text-align: center;
-  }
+  } 
   
   .footer-text {
     font-size: 14px;
     color: #888;
   }
   
-  .hours-title {
-    text-align: left;
-    padding-left: 30px;
-  }
-  
-  .time {
-    padding-left: 30px;
-  }
+
   
   .reviews {
     background-color: #f2f2f2;
@@ -111,5 +112,5 @@
   
   .line {
     border-top: 1px dotted black; /* Change 'dotted' to 'dashed' for dashed line */
-    margin-top: 80px; /* Adjust the margin as needed */
+    margin-top: 60px; /* Adjust the margin as needed */
   }
