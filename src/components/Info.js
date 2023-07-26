@@ -30,13 +30,9 @@ export default function Info() {
         zoom: 15, // Adjust the zoom level as per your preference
       };
 
-      const map = new window.google.maps.Map(mapContainer, mapOptions);
+      // const map = new window.google.maps.Map(mapContainer, mapOptions);
 
-      const marker = new window.google.maps.Marker({
-        position: { lat: 42.170433, lng: -89.620507 }, // Replace with the coordinates of your address
-        map,
-        title: "Tom Peppers General Store",
-      });
+      
     };
 
     const loadMapScript = () => {
