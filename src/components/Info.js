@@ -31,6 +31,11 @@ export default function Info() {
       };
 
       const map = new window.google.maps.Map(mapContainer, mapOptions);
+      const marker = new window.google.maps.Marker({
+        position: { lat: 42.095604, lng: -89.667308 }, // Replace with the coordinates of your address
+        map,
+        title: "Your Location",
+      });
 
       
     };
