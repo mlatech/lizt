@@ -22,7 +22,18 @@ export default function Info() {
 
 
   useEffect(() => {
-   
+    window.initMap = () => {
+      const mapContainer = document.getElementById("map");
+
+      const mapOptions = {
+        center: { lat: 42.170433, lng: -89.620507 }, // Replace with the coordinates of your address
+        zoom: 15, // Adjust the zoom level as per your preference
+      };
+
+      const map = new window.google.maps.Map(mapContainer, mapOptions);
+
+      
+    };
 
     const loadMapScript = () => {
       const script = document.createElement("script");
