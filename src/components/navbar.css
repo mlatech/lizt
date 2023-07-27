@@ -27,6 +27,8 @@
   .nav-links {
     display: flex;
     font-size: 20px;
+    padding-left: 950px;
+    
   }
   .h3{
     font-size: 15px;
@@ -34,10 +36,16 @@
   .nav-link {
     color: #fff;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 18px;
   }
   
   .nav-link:hover {
     text-decoration: underline;
   }
   
+  .nav-icon-link {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+    padding-right: 15px;
+  }
