@@ -1,51 +1,69 @@
 .navbar {
-    background-color: #333;
-    padding:5px;
-    display: flex;
-    height: 62px;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-  }
-  
-  
-  .logo {
-    margin: 0;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo-image {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
-  }
-  
+  background-color: #333;
+  padding: 5px;
+  display: flex;
+  height: 62px;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.logo {
+  margin: 0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Add this line to move the links to the right */
+}
+
+.h3 {
+  font-size: 15px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-icon-link {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 18px;
+}
+
+/* Media query for smaller screens (e.g., phones) */
+/* Media query for smaller screens (e.g., phones) */
+/* Media query for smaller screens (e.g., phones) */
+@media (max-width: 768px) {
   .nav-links {
     display: flex;
-    font-size: 20px;
-    padding-left: 950px;
-    
+    align-items: center;
+    margin-left: auto; /* Move the links to the right side */
   }
-  .h3{
-    font-size: 15px;
-  }
+
   .nav-link {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 18px;
+    margin-left: 18px; /* Add spacing between the links */
   }
-  
-  .nav-link:hover {
-    text-decoration: underline;
-  }
-  
+
   .nav-icon-link {
-    color: #fff;
-    font-size: 20px;
-    margin-left: 10px;
-    padding-right: 15px;
+    display: block; /* Show the Facebook icon link */
   }
+}
