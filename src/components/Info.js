@@ -1,5 +1,5 @@
-import React, { useRef, useEffect }from "react";
-import "./Info.css"; // Import the CSS file for styling
+import React, { useRef, useEffect } from "react";
+import "./Info.css";
 import emailjs from '@emailjs/browser';
 import Navbar from "./NavBar";
 
@@ -11,33 +11,32 @@ export default function Info() {
 
     emailjs.sendForm('service_23d7st8', 'template_gu2c46h', form.current, '37B_5sxiPgoP8OYWl')
       .then((result) => {
-          console.log(result.text);
-          console.log("message sent")
-          form.current.reset();
-          alert('Your message was sent. We will get back to you shortly!');
-      }, (error) => {
-          console.log(error.text);
+        console.log(result.text);
+        console.log("message sent");
+        form.current.reset();
+        alert('Your message was sent. We will get back to you shortly!');
+      })
+      .catch((error) => {
+        console.log(error.text);
       });
   };
-
 
   useEffect(() => {
     window.initMap = () => {
       const mapContainer = document.getElementById("map");
-
+    
       const mapOptions = {
         center: { lat: 42.170433, lng: -89.620507 }, // Replace with the coordinates of your address
         zoom: 15, // Adjust the zoom level as per your preference
       };
-
+    
       const map = new window.google.maps.Map(mapContainer, mapOptions);
-      const marker = new window.google.maps.Marker({
-        position: { lat: 42.095604, lng: -89.667308 }, // Replace with the coordinates of your address
-        map,
-        title: "Your Location",
+    
+      new window.google.maps.Marker({
+        position: { lat: 42.170433, lng: -89.620507 }, // Replace with the desired marker position
+        map: map,
+        title: "Your marker title", // Replace with the desired marker title
       });
-
-      
     };
 
     const loadMapScript = () => {
@@ -71,6 +70,7 @@ export default function Info() {
     </form>
     <div className="line"></div>
     <h1 className="comevisit-title">Come Visit Us During Seasonal Business Hours</h1>
+    <h3>14603 W Coffman Rd, Forreston, IL 61030</h3>
     <div id="map" style={{ height: "400px" }}></div>
     <div className="line"></div>
 <div className="reviews">
