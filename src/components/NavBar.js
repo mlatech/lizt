@@ -4,7 +4,7 @@ import logoImage from "./images/IMG_8098.jpg";
 import "./navbar.css";
 
 export default function Navbar(props) {
-  const facebookPageURL = "https://www.facebook.com/YourFacebookPage"; // Replace this with your Facebook page URL
+  const facebookPageURL = "https://www.facebook.com/TomPeppersGeneralStore/"; // Replace this with your Facebook page URL
 
   return (
     <div className="navbar">
