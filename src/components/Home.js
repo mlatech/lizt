@@ -16,7 +16,7 @@ export default function Home(props) {
       </section>
       <section className="about-us-section">
         <h1 className="about-us-title">About us</h1>
-        <p className="about-us-content">Welcome to Tom Pepper's General Store! We take pride in being a trusted destination for all your gardening needs. We are a family farm and seasonal greenhouse offering heirloom and hybrid veriety seedlings. With a passion for nurturing green spaces, we strive to provide our customers with exceptional products and expert guidance. Feel free to browse our site, or if your in the area...come visit us during our working hours! </p>
+        <p className="about-us-content">Welcome to Tom Pepper's General Store! We take pride in being a trusted destination for all your gardening needs. We are a family farm and seasonal greenhouse offering heirloom and hybrid variety seedlings. With a passion for nurturing green spaces, we strive to provide our customers with exceptional products and expert guidance. Feel free to browse our site, or if your in the area...come visit us during our working hours! </p>
         <p>~~~Happy Gardening!!~~~</p>
         
         <h1 className="about-us-title">Seasonal Business Hours</h1>
